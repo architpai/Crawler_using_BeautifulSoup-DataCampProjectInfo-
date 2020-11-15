@@ -10,6 +10,7 @@ The following information is scraped from the page:
 3. Title
 4. Description
 5. Up Votes
+
 The sample URL that is used to loop and scrape is the following https://www.datacamp.com/community/tutorials?page=2. The page=2 argument changes for each page. In order to loop through all the pages to get the necessary dataset, we need to find out the number of pages.
 ```
 pages = [i.text for i in soup.find_all('a') if 'community/tutorials?page' in str(i)]
