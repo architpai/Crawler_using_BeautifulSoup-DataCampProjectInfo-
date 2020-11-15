@@ -5,11 +5,11 @@ The website is scraped using python's BeautifulSoup package.
 Before begining the scraping it was important to understand the underlying structure of the webpage and to codify the information using xpaths for both understanding and telling the program what to look for while crawling.
 To understand the page structure, Chrome browser developer tools was used. After quickly glancing over the html structure the use of classes in the html tags was apparent, these classes are precise what enabled easy of crawling and extraction of the webpage.
 The following information is scraped from the page:
-1.Author
-2.Publish Date
-3.Title
-4.Description
-5.Up Votes
+1. Author
+2. Publish Date
+3. Title
+4. Description
+5. Up Votes
 The sample URL that is used to loop and scrape is the following https://www.datacamp.com/community/tutorials?page=2. The page=2 argument changes for each page. In order to loop through all the pages to get the necessary dataset, we need to find out the number of pages.
 ```
 pages = [i.text for i in soup.find_all('a') if 'community/tutorials?page' in str(i)]
