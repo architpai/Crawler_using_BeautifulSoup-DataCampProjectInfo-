@@ -69,3 +69,4 @@ cdata = {"author": authorflat, "publishdate": publishdateflat, "title": titlefla
 Then a Pandas Dataframe is generated using the dictionary which is then exported into a .csv file for future use.
 ![](https://github.com/architpai/Crawler_using_BeautifulSoup_tut/blob/main/Screenshots/ss2.png)
 
+**Note2:** This project was created as my walkthrough of DataCamp's tutorial of BeautifulSoup which a the time of writting is a bit broken and I figured my struggle could help someone else. 
